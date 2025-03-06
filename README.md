@@ -20,7 +20,8 @@ La lista de recursos se define en la variable `$recursos` como un array de caden
 ```powershell
 # Define la lista de recursos a importar
 $recursos = @(
-    #nombre del recurso #id del recurso
+    "azurerm_virtual_machine example /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mygroup1/providers/Microsoft.Compute/virtualMachines/machine1",
+    "#nombre del recurso #id del recurso",
 )
 ```
 
