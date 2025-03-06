@@ -54,9 +54,11 @@ foreach ($recurso in $recursos) {
 > - Asegúrate de tener los permisos necesarios para acceder a los recursos de Azure.
 > - Verifica que los IDs de los recursos sean correctos y estén actualizados.
 
-> [!NOTE]
-Contribuciones
-Si deseas contribuir a este proyecto, por favor abre un issue o envía un pull request.
+> [!NOTE]  
+> **Contribuciones**  
+> - Si deseas contribuir a este proyecto, por favor abre un issue.  
+> - También puedes enviar un pull request con mejoras.  
+> - ¡Toda ayuda es bienvenida! 🚀
 
 > [!WARNING]
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
