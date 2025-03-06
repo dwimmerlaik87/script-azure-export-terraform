@@ -1,0 +1,16 @@
+# Define la lista de recursos a importar
+$recursos = @(
+    "#nombre del recurso #id del recurso",
+    "#añadir los recursos necesarios",
+    
+)
+ 
+# Iterar sobre la lista de recursos y ejecutar terraform import
+foreach ($recurso in $recursos) {
+    # Extraer el tipo de recurso, el nombre de recurso y el ID
+    $tipo_recurso, $nombre_recurso, $id_recurso = $recurso -split ' '
+ 
+    # Ejecutar terraform import para cada recurso
+    Write-Output "Importando $tipo_recurso con ID $id_recurso..."
+    terraform import "$tipo_recurso.$nombre_recurso" "$id_recurso"
+}
