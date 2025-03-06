@@ -50,9 +50,11 @@ foreach ($recurso in $recursos) {
 ```
 # El script importará los recursos definidos en la lista a tu configuración de Terraform.
 
+> [!TIP]
+> - Asegúrate de tener los permisos necesarios para acceder a los recursos de Azure.
+> - Verifica que los IDs de los recursos sean correctos y estén actualizados.
+
 > [!NOTE]
-Asegúrate de tener los permisos necesarios para acceder a los recursos de Azure.
-Verifica que los IDs de los recursos sean correctos y estén actualizados.
 Contribuciones
 Si deseas contribuir a este proyecto, por favor abre un issue o envía un pull request.
 
