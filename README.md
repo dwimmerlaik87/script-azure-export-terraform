@@ -51,8 +51,17 @@ foreach ($recurso in $recursos) {
 # Uso
 1. Clona este repositorio en tu máquina local.
 2. Abre una terminal de PowerShell.
-3. Navega al directorio donde se encuentra el script import_terraform.ps1.
-4. Ejecuta el script con el siguiente comando:
+3. Loguin en Azure
+  ```
+   az login
+   ```
+4. Inicializa el backend de terraform
+   ```
+   terraform init
+   ```
+   
+5. Navega al directorio donde se encuentra el script import_terraform.ps1.
+7. Ejecuta el script con el siguiente comando:
    
  ```powershell
    .\import_terraform.ps1
