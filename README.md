@@ -15,15 +15,23 @@ El script define una lista de recursos de Azure que se importarán en Terraform 
 
 ### Lista de Recursos
 
-La lista de recursos se define en la variable `$recursos` como un array de cadenas. Cada cadena contiene el tipo de recurso, el nombre del recurso y el ID del recurso, separados por espacios.
+La lista de recursos se define en la variable `$recursos` como un array de cadenas. Cada cadena contiene:
+- Tipo de recurso: azurerm_virtual_machine
+- Nombre del recurso: example
+- ID del recurso: /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mygroup1/providers/Microsoft.Compute/virtualMachines/machine1
+
+> [!CAUTION]
+> Todo se separa por espacios, el propio script ya coloca el . en el lugar indicado.
+
 
 ```powershell
 # Define la lista de recursos a importar
 $recursos = @(
     "azurerm_virtual_machine example /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mygroup1/providers/Microsoft.Compute/virtualMachines/machine1",
-    "#nombre del recurso #id del recurso",
 )
 ```
+> [!TIP]
+> Seguir añadiendo los recursos necesarios.
 
 # Iterar y Ejecutar terraform import
 El script itera sobre la lista de recursos y ejecuta el comando terraform import para cada uno. Primero, extrae el tipo de recurso, el nombre del recurso y el ID del recurso utilizando el método -split.
