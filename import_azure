@@ -1,8 +1,8 @@
 # Define la lista de recursos a importar
 $recursos = @(
-    "azurerm_virtual_machine.example /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mygroup1/providers/Microsoft.Compute/virtualMachines/machine1",
-    "#nombre del recurso #id del recurso",
-    "#añadir los recursos necesarios",
+    "azurerm_virtual_machine example /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mygroup1/providers/Microsoft.Compute/virtualMachines/machine1",
+    "azurerm_virtual_machine example1 /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mygroup1/providers/Microsoft.Compute/virtualMachines/machine2",
+    "azurerm_virtual_machine example2 /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mygroup1/providers/Microsoft.Compute/virtualMachines/machine3",
     
 )
  
